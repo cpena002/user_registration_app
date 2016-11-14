@@ -1,0 +1,19 @@
+<h1>Welcome!</h1>
+<hr>
+
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<form action="users/register" method="post">
+  <input type="text" name="full_name" placeholder="Full Name"/><br>
+  <input type="text" name="street_address" placeholder="Address"/><br>
+  <input type="text" name="city" placeholder="City"/><br>
+  <input type="text" name="state" placeholder="State"/><br>
+  <input type="integer" name="postal_code" placeholder="Postal Code"/><br>
+  <input type="text" name="country" placeholder="Country"/><br>
+  <input type="text" name="email" placeholder="Email"/><br>
+  <input type="text" name="user_name" placeholder="User Name" /><br>
+  <input type="password" name="password" placeholder="password"/><br>
+  <input type="submit" value="Register"><br>
+</form>
